@@ -141,17 +141,17 @@ def bot_message(message):
         #3 линия 1 точка 
     elif message.text == '3/1':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/aSq_Au3movs")
+        bot.send_photo(message.chat.id, photo, caption = "Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nВидео: https://youtu.be/aSq_Au3movs")
 
     #3 линия 2 точка 
     elif message.text == '3/2':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/HYNMnbGql80")
+        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nВидео: https://youtu.be/HYNMnbGql80")
 
     #3 линия 3 точка 
     elif message.text == '3/3':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/rp8FmNgBRnM")
+        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nВидео: https://youtu.be/rp8FmNgBRnM")
     #3 линия 4 точка
     #3 линия 5 точка
     #3 линия 6 точка
