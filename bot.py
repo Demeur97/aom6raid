@@ -298,7 +298,7 @@ def bot_message(message):
         bot.send_message(message.chat.id, "Выберите точку:", reply_markup = markup)
 
     #8 линия 1 группа
-        elif message.text == '8/1':
+    elif message.text == '8/1':
         photo1 = open ('Пачки/АртусРойнар.jpg', 'rb')
         bot.send_photo(message.chat.id, photo1, caption = "№1. Артус Магнус Сакриф Тирос Ройнар\n\nКомментарий:\nМожно на авто")
     #8 линия 2 группа
