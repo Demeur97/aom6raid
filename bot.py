@@ -141,17 +141,17 @@ def bot_message(message):
         #3 линия 1 точка 
     elif message.text == '3/1':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/aSq_Au3movs")
+        bot.send_photo(message.chat.id, photo, caption = "Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять")
 
     #3 линия 2 точка 
     elif message.text == '3/2':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/HYNMnbGql80")
+        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять")
 
     #3 линия 3 точка 
     elif message.text == '3/3':
         photo = open ('Пачки/Дикие1.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять\n\nСсылка: https://youtu.be/rp8FmNgBRnM")
+        bot.send_photo(message.chat.id, photo, caption = "№1. Глориана Тилеана Кернуол Маэглин Идриль\n\nКомментарий:\nАвто, в конце 2/3 линии если персонаж умер стараться его поднять")
     #3 линия 4 точка
     #3 линия 5 точка
     #3 линия 6 точка
@@ -166,15 +166,22 @@ def bot_message(message):
     elif message.text == '4 линия':
         markup = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard = True)
         item1 = types.KeyboardButton('4/1')
+        item2 = types.KeyboardButton('4/2')
+        item3 = types.KeyboardButton('4/3')
+        item4 = types.KeyboardButton('4/4')
+        item5 = types.KeyboardButton('4/5')
+        item6 = types.KeyboardButton('4/6')
+        item7 = types.KeyboardButton('4/7')
+        item8 = types.KeyboardButton('4/8')
+        item9 = types.KeyboardButton('4/9')
+        item10 = types.KeyboardButton('4/10')
+        item11 = types.KeyboardButton('4/11')
         menu = types.KeyboardButton('⬅️ Меню')
 
-        markup.add(item1, menu) 
+        markup.add(item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, menu) 
         bot.send_message(message.chat.id, "Выберите точку:", reply_markup = markup)
 
     #4 линия 1 точка 
-    elif message.text == '4/1':
-        photo1 = open ('Пачки/АртусРойнар.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo1, caption = "№1. Артус Магнус Сакриф Тирос Ройнар\n\nКомментарий:\nМожно на авто")
     #4 линия 2 точка 
     #4 линия 3 точка 
     #4 линия 4 точка 
@@ -254,9 +261,7 @@ def bot_message(message):
         #6 линия 8 точка (Трорин)
     elif message.text == '6/8 (Трорин)':
         photo1 = open ('Пачки/ТроринАзариэль.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo1, caption = "№1. Трорин, Троддар, Велундар, Харгрим, Азариэль (4 волна)\n\n Комментарий: Используем 2 скилл Трорина, Азариэль и Харгримом кидаем хил. Босс бьет 3 скиллом и получает ответ урона.")   
-        photo2 = open ('Пачки/ТроринГномы.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo1, caption = "№2. Трорин, Троддар, Велундар, Харгрим, Ангрим (4 волна)\n\n Комментарий: Используем 2 скилл Трорина, Азариэль и Харгримом кидаем хил. Босс бьет 3 скиллом и получает ответ урона.")
+        bot.send_photo(message.chat.id, photo1, caption = "№1. Трорин, Троддар, Велундар, Харгрим, Азариэль\n\n Комментарий: Используем 2 скилл Трорина, Азариэль и Харгримом кидаем хил. Босс бьет 3 скиллом и получает ответ урона.")   
         #6 линия 9 точка
         #6 линия 10 точка
         #6 линия 11 точка
@@ -294,15 +299,15 @@ def bot_message(message):
     elif message.text == '8 линия':
         markup = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard = True)
         item1 = types.KeyboardButton('8/1')
+        item2 = types.KeyboardButton('8/2')
+        item3 = types.KeyboardButton('8/3')
+        item4 = types.KeyboardButton('8/4')
         menu = types.KeyboardButton('⬅️ Меню')
 
-        markup.add(item1, menu) 
+        markup.add(item1, item2, item3, item4, menu) 
         bot.send_message(message.chat.id, "Выберите точку:", reply_markup = markup)
 
     #8 линия 1 группа
-    elif message.text == '8/1':
-        photo1 = open ('Пачки/АртусРойнар.jpg', 'rb')
-        bot.send_photo(message.chat.id, photo1, caption = "№1. Артус Магнус Сакриф Тирос Ройнар\n\nКомментарий:\nМожно на авто")
     #8 линия 2 группа
     #8 линия 3 группа
     #8 линия 4 группа
