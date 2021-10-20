@@ -166,22 +166,15 @@ def bot_message(message):
     elif message.text == '4 линия':
         markup = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard = True)
         item1 = types.KeyboardButton('4/1')
-        item2 = types.KeyboardButton('4/2')
-        item3 = types.KeyboardButton('4/3')
-        item4 = types.KeyboardButton('4/4')
-        item5 = types.KeyboardButton('4/5')
-        item6 = types.KeyboardButton('4/6')
-        item7 = types.KeyboardButton('4/7')
-        item8 = types.KeyboardButton('4/8')
-        item9 = types.KeyboardButton('4/9')
-        item10 = types.KeyboardButton('4/10')
-        item11 = types.KeyboardButton('4/11')
         menu = types.KeyboardButton('⬅️ Меню')
 
-        markup.add(item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, menu) 
+        markup.add(item1, menu) 
         bot.send_message(message.chat.id, "Выберите точку:", reply_markup = markup)
 
     #4 линия 1 точка 
+    elif message.text == '4/1':
+        photo1 = open ('Пачки/АртусРойнар.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo1, caption = "№1. Артус Магнус Сакриф Тирос Ройнар\n\nКомментарий:\nМожно на авто")
     #4 линия 2 точка 
     #4 линия 3 точка 
     #4 линия 4 точка 
@@ -299,15 +292,15 @@ def bot_message(message):
     elif message.text == '8 линия':
         markup = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard = True)
         item1 = types.KeyboardButton('8/1')
-        item2 = types.KeyboardButton('8/2')
-        item3 = types.KeyboardButton('8/3')
-        item4 = types.KeyboardButton('8/4')
         menu = types.KeyboardButton('⬅️ Меню')
 
-        markup.add(item1, item2, item3, item4, menu) 
+        markup.add(item1, menu) 
         bot.send_message(message.chat.id, "Выберите точку:", reply_markup = markup)
 
     #8 линия 1 группа
+        elif message.text == '8/1':
+        photo1 = open ('Пачки/АртусРойнар.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo1, caption = "№1. Артус Магнус Сакриф Тирос Ройнар\n\nКомментарий:\nМожно на авто")
     #8 линия 2 группа
     #8 линия 3 группа
     #8 линия 4 группа
